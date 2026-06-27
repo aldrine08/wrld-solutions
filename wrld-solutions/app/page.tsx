@@ -9,6 +9,7 @@ import Contact from "@/sections/Contact";
 import Footer from "@/components/Footer";
 import Technologies from "@/sections/Technologies";
 import Globe from "@/components/3d/Globe";
+import ProjectShowcase from "@/sections/ProjectShowcase";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Solutions />
+      <ProjectShowcase />
       <Transformation />
       <Industries />
       <Stats />
