@@ -10,6 +10,8 @@ import GridBackground from "@/components/GridBackground";
 
 import MouseGlow from "@/components/MouseGlow";
 
+import Globe from "@/components/3d/Globe";
+
 
 export default function Hero() {
   const heroRef = useRef(null);
@@ -46,9 +48,21 @@ export default function Hero() {
 
 <div className="absolute w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-3xl bottom-20 right-20"></div>
 
+      <div>
+      
       <div
   ref={heroRef}
-  className="max-w-7xl mx-auto text-center px-6 relative z-10"
+  className="
+  max-w-7xl
+  mx-auto
+  px-6
+  grid
+  lg:grid-cols-2
+  gap-12
+  items-center
+  relative
+  z-10
+  "
 >
 
   <p className="text-blue-400 uppercase tracking-[0.3em] text-sm font-medium">
@@ -148,6 +162,15 @@ export default function Hero() {
       </span>
     ))}
 
+  </div>
+
+</div>
+</div>
+
+<div className="hidden lg:flex justify-center">
+
+  <div className="w-full max-w-[600px]">
+    <Globe />
   </div>
 
 </div>

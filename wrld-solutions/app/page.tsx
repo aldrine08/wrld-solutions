@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Globe />
       <Hero />
       <Services />
       <Solutions />

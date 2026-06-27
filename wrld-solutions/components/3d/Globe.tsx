@@ -155,7 +155,7 @@ function Earth() {
 
 export default function Globe() {
   return (
-    <div className="w-full h-[500px]">
+    <div className="w-full h-[550px]">
       <Canvas camera={{ position: [0, 0, 6] }}>
         <ambientLight intensity={2} />
 
