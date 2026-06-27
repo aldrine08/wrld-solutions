@@ -52,7 +52,7 @@ export default function Solutions() {
 
   return (
     <Reveal>
-      <section className="py-24 bg-gradient-to-b from-slate-50 to-white">
+      <section id="solutions" className="py-24 bg-gradient-to-b from-slate-50 to-white">
 
         <div className="max-w-7xl mx-auto px-6">
 

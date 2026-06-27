@@ -4,7 +4,7 @@ import { Mail, Phone, ArrowRight } from "lucide-react";
 export default function Contact() {
   return (
     <Reveal>
-      <section className="py-24 bg-gradient-to-b from-[#081120] via-[#0B1730] to-[#081120]">
+      <section id="contact" className="py-24 bg-gradient-to-b from-[#081120] via-[#0B1730] to-[#081120]">
 
         <div className="max-w-5xl mx-auto px-6 text-center">
 

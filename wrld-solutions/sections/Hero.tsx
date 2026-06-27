@@ -38,7 +38,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#081120] via-[#0b1730] to-[#081120] text-white flex items-center justify-center relative overflow-hidden">
+    <section id="home"  className="min-h-screen bg-gradient-to-b from-[#081120] via-[#0b1730] to-[#081120] text-white flex items-center justify-center relative overflow-hidden">
       <GridBackground />
       <MouseGlow />
 
