@@ -12,14 +12,14 @@ export default function Industries() {
 
   return (
     <Reveal>
-  <section className="bg-white py-24">
+  <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-5xl font-bold text-center">
+        <h2 className="text-3xl font-bold text-slate-900 text-center">
           Industries We Serve
         </h2>
 
-        <p className="text-center text-slate-300 mt-4 max-w-3xl mx-auto">
+        <p className="text-center text-blue-600 font-bold text-slate-900text-slate-300 mt-4 max-w-3xl mx-auto">
           We build digital solutions that adapt to different industries and operational environments.
         </p>
 
@@ -41,7 +41,7 @@ duration-300
 group
 "
             >
-              <h3 className="text-2xl font-semibold text-slate-900 group-hover:text-blue-600 transition">
+              <h3 className="text-3xl font-bold text-slate-900 group-hover:text-blue-600 transition">
                 {industry}
               </h3>
             </div>

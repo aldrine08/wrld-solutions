@@ -48,9 +48,9 @@ export default function Hero() {
 
       <div
   ref={heroRef}
-  className="max-w-4xl text-center px-6"
+  className="max-w-6xl text-center px-6"
 >
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+        <h1 className="text-7xl md:text-8xl md:text-7xl font-bold leading-tight">
           Transforming Organizations Through
           <span className="text-blue-500">
             {" "}Software, AI & Intelligent Automation
