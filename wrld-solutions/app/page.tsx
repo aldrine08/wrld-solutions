@@ -11,6 +11,7 @@ import Technologies from "@/sections/Technologies";
 import Globe from "@/components/3d/Globe";
 import ProjectShowcase from "@/sections/ProjectShowcase";
 import WhyChooseUs from "@/sections/WhyChooseUs";
+import ClientJourney from "@/sections/ClientJourney";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Solutions />
       <ProjectShowcase />
       <WhyChooseUs />
+      <ClientJourney />
       <Transformation />
       <Industries />
       <Stats />
