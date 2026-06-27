@@ -1,6 +1,10 @@
+import Reveal from "@/components/Reveal";    
+
+
 export default function Contact() {
   return (
-    <section className="bg-slate-950 text-white py-24">
+    <Reveal>
+  <section className="bg-white py-24">
       <div className="max-w-4xl mx-auto px-6 text-center">
 
         <h2 className="text-5xl font-bold">
@@ -28,5 +32,6 @@ export default function Contact() {
 
       </div>
     </section>
+    </Reveal>
   );
 }

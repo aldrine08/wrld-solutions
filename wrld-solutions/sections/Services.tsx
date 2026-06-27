@@ -1,3 +1,7 @@
+import Reveal from "@/components/Reveal";
+
+
+
 export default function Services() {
   const services = [
     {
@@ -33,7 +37,8 @@ export default function Services() {
   ];
 
   return (
-    <section className="bg-white py-24">
+    <Reveal>
+  <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         <h2 className="text-5xl font-bold text-center text-slate-900">
@@ -64,5 +69,6 @@ export default function Services() {
 
       </div>
     </section>
-  );
+  </Reveal>
+);
 }

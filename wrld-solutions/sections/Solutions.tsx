@@ -1,3 +1,8 @@
+import Reveal from "@/components/Reveal";
+
+
+
+
 export default function Solutions() {
   const solutions = [
     {
@@ -33,7 +38,8 @@ export default function Solutions() {
   ];
 
   return (
-    <section className="bg-slate-900 text-white py-24">
+    <Reveal>
+  <section className="bg-white py-24">        
       <div className="max-w-7xl mx-auto px-6">
 
         <h2 className="text-5xl font-bold text-center">
@@ -68,5 +74,6 @@ export default function Solutions() {
 
       </div>
     </section>
+    </Reveal>
   );
 }

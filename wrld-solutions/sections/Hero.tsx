@@ -3,10 +3,15 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default function Hero() {
   const heroRef = useRef(null);
 
 useEffect(() => {
+
+  gsap.registerPlugin(ScrollTrigger);
+  
   gsap.from(heroRef.current, {
     opacity: 0,
     y: 100,

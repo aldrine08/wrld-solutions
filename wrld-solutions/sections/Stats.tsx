@@ -1,6 +1,12 @@
+import Reveal from "@/components/Reveal";
+
+
+
+
 export default function Stats() {
   return (
-    <section className="bg-white py-24">
+    <Reveal>
+  <section className="bg-white py-24">
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="grid md:grid-cols-4 gap-8 text-center">
@@ -45,5 +51,6 @@ export default function Stats() {
 
       </div>
     </section>
+    </Reveal>
   );
 }

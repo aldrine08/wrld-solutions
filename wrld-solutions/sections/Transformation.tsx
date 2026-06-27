@@ -1,6 +1,12 @@
+import Reveal from "@/components/Reveal";
+
+
+
+
 export default function Transformation() {
   return (
-    <section className="py-28 bg-white">
+    <Reveal>
+  <section className="bg-white py-24">
       <div className="max-w-6xl mx-auto px-6">
 
         <h2 className="text-5xl font-bold text-center text-slate-900">
@@ -60,5 +66,6 @@ export default function Transformation() {
 
       </div>
     </section>
+    </Reveal>
   );
 }
