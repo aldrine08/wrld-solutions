@@ -48,76 +48,111 @@ export default function Hero() {
 
       <div
   ref={heroRef}
-  className="max-w-6xl text-center px-6"
+  className="max-w-7xl mx-auto text-center px-6 relative z-10"
 >
-        <h1 className="text-7xl md:text-8xl md:text-7xl font-bold leading-tight">
-          Transforming Organizations Through
-          <span className="text-blue-500">
-            {" "}Software, AI & Intelligent Automation
-          </span>
-        </h1>
 
-        <p className="mt-6 text-lg md:text-xl text-gray-300">
-          WRLD SOLUTIONS builds enterprise software,
-          AI agents and workflow automation systems
-          for modern organizations.
-        </p>
+  <p className="text-blue-400 uppercase tracking-[0.3em] text-sm font-medium">
+    SOFTWARE • AI • AUTOMATION
+  </p>
 
-        <div className="mt-8">
-          <button
-  className="
-    bg-blue-600
-    hover:bg-blue-500
-    hover:scale-105
-    px-8
-    py-4
-    rounded-xl
-    font-semibold
-    transition-all
-    duration-300
-    shadow-lg
-    shadow-blue-500/20
-  "
->
-  Explore Solutions
-</button>
+  <h1 className="mt-6 text-6xl md:text-8xl font-bold leading-tight">
 
-<button
-  className="
-    border
-    border-white/20
-    hover:border-blue-400
-    px-8
-    py-4
-    rounded-xl
-    ml-4
-    transition-all
-  "
->
-  Contact Us
-</button>
+    Transforming Organizations Through
 
-<div className="mt-16 flex flex-wrap justify-center gap-4">
+    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-600">
+      Software, AI & Intelligent Automation
+    </span>
 
-  <span className="bg-white/10 px-4 py-2 rounded-full border border-white/10">
-    AI Agents
-  </span>
+  </h1>
 
-  <span className="bg-white/10 px-4 py-2 rounded-full border border-white/10">
-    ERP Systems
-  </span>
+  <p className="mt-8 text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+    WRLD SOLUTIONS designs enterprise software,
+    AI agents, workflow automation systems,
+    cloud infrastructure and digital transformation
+    solutions for modern organizations.
+  </p>
 
-  <span className="bg-white/10 px-4 py-2 rounded-full border border-white/10">
-    Workflow Automation
-  </span>
+  <div className="flex flex-wrap justify-center gap-4 mt-10">
 
-  <span className="bg-white/10 px-4 py-2 rounded-full border border-white/10">
-    Mobile Apps
-  </span>
+    <button
+      className="
+      bg-blue-600
+      hover:bg-blue-500
+      px-8
+      py-4
+      rounded-xl
+      font-semibold
+      shadow-lg
+      shadow-blue-500/30
+      transition-all
+      hover:scale-105
+      "
+    >
+      Explore Solutions
+    </button>
+
+    <button
+      className="
+      bg-white/5
+      backdrop-blur-lg
+      border
+      border-white/10
+      hover:border-blue-500
+      px-8
+      py-4
+      rounded-xl
+      text-white
+      transition-all
+      "
+    >
+      Contact Us
+    </button>
+
+  </div>
+
+  <div
+    ref={badgesRef}
+    className="
+    mt-16
+    flex
+    flex-wrap
+    justify-center
+    gap-4
+    "
+  >
+
+    {[
+      "AI Agents",
+      "ERP Systems",
+      "Workflow Automation",
+      "Mobile Apps",
+      "Cybersecurity",
+      "Cloud Infrastructure",
+    ].map((item) => (
+      <span
+        key={item}
+        className="
+        px-5
+        py-3
+        rounded-full
+        bg-white/5
+        backdrop-blur-lg
+        border
+        border-white/10
+        text-slate-300
+        hover:border-blue-500
+        transition
+        "
+      >
+        {item}
+      </span>
+    ))}
+
+  </div>
 
 </div>
-        </div>
-      </div>
+
+
 
 
       <div
