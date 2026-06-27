@@ -8,11 +8,13 @@ import Stats from "@/sections/Stats";
 import Contact from "@/sections/Contact";
 import Footer from "@/components/Footer";
 import Technologies from "@/sections/Technologies";
+import Globe from "@/components/3d/Globe";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
+      <Globe />
       <Hero />
       <Services />
       <Solutions />
