@@ -7,6 +7,7 @@ import Industries from "@/sections/Industries";
 import Stats from "@/sections/Stats";
 import Contact from "@/sections/Contact";
 import Footer from "@/components/Footer";
+import Technologies from "@/sections/Technologies";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Transformation />
       <Industries />
       <Stats />
+      <Technologies />
       <Contact />
       <Footer />
     </main>
