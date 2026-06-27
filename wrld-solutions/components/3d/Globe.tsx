@@ -1,9 +1,10 @@
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Line } from "@react-three/drei";
 import { useRef, useMemo } from "react";
 import * as THREE from "three";
+
 
 function Particles() {
   const particles = useMemo(() => {
@@ -63,6 +64,60 @@ function Nodes() {
   );
 }
 
+
+
+  function NetworkLines() {
+  return (
+    <>
+      <Line
+        points={[
+          [2, 0, 0],
+          [0, 2, 0],
+        ]}
+        color="#38bdf8"
+        lineWidth={1}
+      />
+
+      <Line
+        points={[
+          [0, 2, 0],
+          [-2, 0.5, 0],
+        ]}
+        color="#38bdf8"
+        lineWidth={1}
+      />
+
+      <Line
+        points={[
+          [-2, 0.5, 0],
+          [0, -2, 0],
+        ]}
+        color="#38bdf8"
+        lineWidth={1}
+      />
+
+      <Line
+        points={[
+          [0, -2, 0],
+          [1.5, 1.5, 0],
+        ]}
+        color="#38bdf8"
+        lineWidth={1}
+      />
+
+      <Line
+        points={[
+          [1.5, 1.5, 0],
+          [2, 0, 0],
+        ]}
+        color="#38bdf8"
+        lineWidth={1}
+      />
+    </>
+  );
+}
+
+
 function Earth() {
   const globeRef = useRef<THREE.Mesh>(null);
 
@@ -76,7 +131,7 @@ function Earth() {
     <>
       {/* Main Globe */}
       <mesh ref={globeRef}>
-        <sphereGeometry args={[2, 64, 64]} />
+        <sphereGeometry args={[2.3, 64, 64]} />
 
         <meshStandardMaterial
           color="#2563eb"
@@ -85,8 +140,8 @@ function Earth() {
       </mesh>
 
       {/* Atmosphere Glow */}
-      <mesh scale={1.1}>
-        <sphereGeometry args={[2, 64, 64]} />
+      <mesh scale={1.15}>
+        <sphereGeometry args={[2.3, 64, 64]} />
 
         <meshBasicMaterial
           color="#60a5fa"
@@ -110,6 +165,8 @@ export default function Globe() {
         />
 
         <Particles />
+
+        <NetworkLines />
 
         <Nodes />
 
