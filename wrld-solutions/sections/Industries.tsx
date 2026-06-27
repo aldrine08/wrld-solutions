@@ -27,9 +27,21 @@ export default function Industries() {
           {industries.map((industry) => (
             <div
               key={industry}
-              className="bg-slate-800 border border-slate-700 rounded-3xl p-10 text-center hover:border-blue-500 hover:-translate-y-2 transition-all duration-300"
+              className="
+bg-white
+border
+border-slate-200
+rounded-2xl
+p-8
+hover:-translate-y-3
+hover:shadow-2xl
+hover:border-blue-400
+transition-all
+duration-300
+group
+"
             >
-              <h3 className="text-2xl font-semibold">
+              <h3 className="text-2xl font-semibold text-slate-900 group-hover:text-blue-600 transition">
                 {industry}
               </h3>
             </div>

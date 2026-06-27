@@ -42,11 +42,11 @@ export default function Solutions() {
   <section className="bg-white py-24">        
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-5xl font-bold text-center">
+        <h2 className="text-blue-600 text-5xl font-bold text-center">
           Featured Solutions
         </h2>
 
-        <p className="text-center text-slate-300 mt-4 max-w-3xl mx-auto">
+        <p className="text-dark text-center text-slate-300 mt-4 max-w-3xl mx-auto">
           Purpose-built systems designed to transform organizational
           operations and improve efficiency.
         </p>
@@ -56,11 +56,23 @@ export default function Solutions() {
           {solutions.map((solution) => (
             <div
               key={solution.title}
-              className="bg-slate-800 border border-slate-700 rounded-3xl p-8 hover:border-blue-500 hover:-translate-y-2 transition-all duration-300"
+              className="
+bg-white
+border
+border-slate-200
+rounded-2xl
+p-8
+hover:-translate-y-3
+hover:shadow-2xl
+hover:border-blue-400
+transition-all
+duration-300
+group
+"
             >
               <div className="w-14 h-14 rounded-xl bg-blue-600 mb-6"></div>
 
-              <h3 className="text-2xl font-semibold">
+              <h3 className="text-2xl font-semibold text-slate-900 group-hover:text-blue-600 transition">
                 {solution.title}
               </h3>
 
