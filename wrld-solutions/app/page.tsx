@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import Technologies from "@/sections/Technologies";
 import Globe from "@/components/3d/Globe";
 import ProjectShowcase from "@/sections/ProjectShowcase";
+import WhyChooseUs from "@/sections/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <Solutions />
       <ProjectShowcase />
+      <WhyChooseUs />
       <Transformation />
       <Industries />
       <Stats />
